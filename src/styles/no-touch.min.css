@@ -221,7 +221,7 @@ button:focus {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding-top: 20%;
+  padding-top: 10%;
 }
 .git-form {
   width: 1160px;
@@ -567,4 +567,7 @@ input:checked + .slider:before {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.contact-icn {
+  box-shadow: 0 0 40px rgb(255, 255, 255); 
 }
