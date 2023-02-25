@@ -9,11 +9,11 @@ const animation = {
 };
 // Change your display name on tha landing display
 const header = {
-  name: 'a Human',
+  name: 'Hunda',
 };
 const background = {
   // Options: Snow or Particle
-  type: 'Snow',
+  type: 'Particle',
 };
 // Write a para about yourself here
 // To update your image, go to './styles/images.css'
