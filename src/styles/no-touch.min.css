@@ -571,3 +571,11 @@ input:checked + .slider:before {
 .contact-icn {
   box-shadow: 0 0 40px rgb(255, 255, 255); 
 }
+ #Contact{
+  font-family:cursive
+}
+.social-btn {
+  /* height: min(150vw, 100px) */
+}
+.socials-div {
+}

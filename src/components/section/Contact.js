@@ -1,9 +1,30 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { contact, section5Title, social } from '../../profile';
 
+const socials = [
+  'gmail',
+  'telegram',
+  'instagram',
+  'linkedin',
+  'github',
+  'gitlab',
+];
+
 const Contact = () => {
+  const [flexDir, setFlexDir] = useState('column');
+  const isOverflown = (element) => {
+    console.log(`element`, element);
+    return (
+      element.scrollHeight > element.clientHeight ||
+      element.scrollWidth > element.clientWidth
+    );
+  };
+  const onLoadFunc = (e) => {
+    const dir = isOverflown(e) ? 'column' : 'row';
+    setFlexDir(dir);
+  };
   return (
-    <div className='parallax'>
+    <div className='parallax' onLoad={onLoadFunc}>
       <div data-aos='zoom-in-up'>
         <>
           <div
@@ -15,94 +36,30 @@ const Contact = () => {
             </h1>
           </div>
           <div
+            className='socials-div'
             style={{
               display: 'flex',
               justifyContent: 'center',
             }}
           >
-            <button
-              style={{
-                padding: 0,
-                border: 0,
-                background: 'transparent',
-                marginInline: 'auto',
-                margin: 20,
-                height: 'fit-content',
-                width: 'fit-content',
-              }}
-            >
-              <img
-                src='/gmail.png'
+            {socials.map((el) => (
+              <button
                 style={{
-                  width: '3rem',
-                  height: '2.5rem',
                   padding: 0,
+                  border: 0,
+                  background: 'transparent',
+                  marginInline: 'auto',
+                  margin: 20,
                 }}
-              ></img>
-            </button>
-            <button
-              style={{
-                alignSelf: 'center',
-                padding: 0,
-                border: 0,
-                background: 'transparent',
-                marginInline: 'auto',
-                margin: 20,
-                height: 'fit-content',
-                width: 'fit-content',
-              }}
-            >
-              <img
-                src='/telegram.svg'
-                style={{
-                  width: '3rem',
-                  height: '3rem',
-                  padding: 0,
-                }}
-              ></img>
-            </button>
-            <button
-              style={{
-                alignSelf: 'center',
-                padding: 0,
-                border: 0,
-                background: 'transparent',
-                marginInline: 'auto',
-                margin: 20,
-                height: 'fit-content',
-                width: 'fit-content',
-              }}
-            >
-              <img
-                src='/linkedin.png'
-                style={{
-                  width: '3rem',
-                  height: '3rem',
-                  padding: 0,
-                }}
-              ></img>
-            </button>
-            <button
-              style={{
-                alignSelf: 'center',
-                padding: 0,
-                border: 0,
-                background: 'transparent',
-                marginInline: 'auto',
-                margin: 20,
-                height: 'fit-content',
-                width: 'fit-content',
-              }}
-            >
-              <img
-                src='/insta.png'
-                style={{
-                  width: '3rem',
-                  height: '3rem',
-                  padding: 0,
-                }}
-              ></img>
-            </button>
+              >
+                <img
+                  src={`${el}2.png`}
+                  style={{
+                    padding: 0,
+                  }}
+                ></img>
+              </button>
+            ))}
           </div>
         </>
       </div>
