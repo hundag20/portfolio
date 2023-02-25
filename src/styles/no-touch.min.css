@@ -446,8 +446,8 @@ input:checked + .slider:before {
   font-family: "Anonymous Pro", monospace !important;
 }
 .anim-typewriter {
-  animation: typewriter 4s steps(27) 1s 1 normal both,
-    blinkTextCursor 0.5s steps(27) infinite normal;
+  animation: typewriter 4s steps(37) 1s 1 normal both,
+    blinkTextCursor 0.5s steps(37) infinite normal;
 }
 /* https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 */
 .parallax {

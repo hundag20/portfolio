@@ -39,6 +39,7 @@ const Contact = () => {
             style={{
               display: 'flex',
               justifyContent: 'center',
+              flexWrap: 'wrap',
             }}
           >
             {socials.map((el) => (
