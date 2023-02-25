@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import { contact, section5Title, social } from '../../profile';
 
-const socials = [
-  'gmail',
-  'telegram',
-  'instagram',
-  'linkedin',
-  'github',
-  'gitlab',
+let socials = [
+  { name: 'gmail', link: 'mailto:hundaguluma@gmail.com' },
+  { name: 'telegram', link: 'https://t.me/timshel' },
+  { name: 'instagram', link: 'https://www.instagram.com/hunda____/' },
+  { name: 'linkedin', link: 'https://www.linkedin.com/in/hundag20' },
+  { name: 'github', link: 'https://github.com/hundag20' },
+  { name: 'gitlab', link: 'https://gitlab.com/hundaguluma/' },
 ];
-
 const Contact = () => {
   const [flexDir, setFlexDir] = useState('column');
   const isOverflown = (element) => {
@@ -52,12 +51,14 @@ const Contact = () => {
                   margin: 20,
                 }}
               >
-                <img
-                  src={`${el}2.png`}
-                  style={{
-                    padding: 0,
-                  }}
-                ></img>
+                <a href={el.link}>
+                  <img
+                    src={`${el.name}2.png`}
+                    style={{
+                      padding: 0,
+                    }}
+                  ></img>
+                </a>
               </button>
             ))}
           </div>
