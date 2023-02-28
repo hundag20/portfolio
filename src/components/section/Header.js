@@ -32,14 +32,7 @@ const Header = () => {
         <p className='line-1 anim-typewriter'>
           Welcome to my corner of the web...
         </p>
-        <label className='switch'>
-        <input
-          id='mode-switch'
-          onClick={(e) => toggleDarkMode(e)}
-          type='checkbox'
-        />
-        <span className='slider round'></span>
-        </label>
+
         <HeaderButton />
       </div>
     </div>
