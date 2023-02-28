@@ -80,7 +80,7 @@ const skillsBar = [
 // Edit your projects, its name, your skills used to make it, and the url.
 // You can omit freely anything if you dont have it
 // To Add a Project, copy any one below and paste it after the last comma and increment the id's project number
-const section3Title = 'Past Projects';
+const section3Title = 'Projects Available in the Public Domain';
 const projects = [
   {
     // Add image in './styles/images.css' in #project1
@@ -128,7 +128,7 @@ const projects = [
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you dont have it
 // To Add a Activity, copy any one below and paste it after the last comma and increment the id's Miscellaneous number
-const section4Title = 'Miscellaneous';
+const section4Title = 'Projects Deployed in Private Environments';
 const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc1

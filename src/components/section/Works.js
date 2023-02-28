@@ -20,8 +20,8 @@ const Works = () => {
 
             <div className="third">
                 <>
-                    <div className="pp-head-line mx-auto text-center">
-                        <h1 id="Projects" className="red-line pp-head">{section4Title}</h1>
+                    <div className="pp-head-line mx-auto text-center" style={{width: '40%'}}>
+                        <h1 id="Projects" className="red-line pp-head" >{section4Title}</h1>
                     </div>
                 </>
                 <div className="row">
