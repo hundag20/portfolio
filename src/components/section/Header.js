@@ -1,6 +1,16 @@
 import React from 'react';
 import HeaderButton from '../layouts/HeaderButton';
 import { header } from '../../profile';
+import { IconButton, SpeedDial, SpeedDialIcon, Tooltip } from '@mui/material';
+import DownloadIcon from '@mui/icons-material/Download';
+
+const downloadCvHandler = () => {
+  //download file
+  const link = document.createElement('a');
+  link.download = 'cv_0930586155.pdf';
+  link.href = '/cv_0930586155.pdf';
+  link.click();
+}
 
 const Header = () => {
   const scrollTo = () => {
@@ -34,6 +44,13 @@ const Header = () => {
         </p>
 
         <HeaderButton />
+        <SpeedDial ariaLabel="SpeedDial basic example"
+          sx={{ position: 'fixed', bottom: 16, right: 16 }}
+          icon={<Tooltip title="Download CV">
+            <IconButton onClick={downloadCvHandler}>
+              <DownloadIcon fontSize='large' />
+            </IconButton>
+          </Tooltip>} />
       </div>
     </div>
   );
