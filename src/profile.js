@@ -28,7 +28,7 @@ const skillsBar = [
   {
     name: 'HTML5',
     // To add a custom svg instead of font-awesome icons, add svg path below otherwise just comment it out
-    svg: 'M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z',
+    // svg: 'M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z',
     faClass: 'fab fa-html5',
   },
   {
@@ -52,29 +52,30 @@ const skillsBar = [
     faClass: 'fab fa-node',
   },
   {
-    name: 'Python',
-    // svg: '',
-    faClass: 'fab fa-python',
-  },
-  {
     name: 'Java',
     // svg: '',
     faClass: 'fab fa-java',
   },
   {
-    name: 'PHP',
-    // svg: '',
-    faClass: 'fab fa-php',
-  },
-  {
-    name: 'Database',
+    name: 'SQL/No-SQL',
     // svg: '',
     faClass: 'fas fa-database',
   },
   {
-    name: 'AWS',
+    name: 'ReactJs',
     // svg: '',
-    faClass: 'fab fa-aws',
+    faClass: 'fab fa-react',
+  },
+  {
+    name: 'Docker',
+    // svg: '',
+    faClass: 'fab fa-docker',
+  },
+  {
+    name: 'CI/CD',
+    viewBox: "0 -30 110 150",
+    svg: 'm 38.6,52.6 c 0,-6.9 5.6,-12.5 12.5,-12.5 6.9,0 12.5,5.6 12.5,12.5 0,6.9 -5.6,12.5 -12.5,12.5 C 44.2,65.2 38.6,59.5 38.6,52.6 Z M 51.1,0 C 26.5,0 5.9,16.8 0.1,39.6 0.1,39.8 0,39.9 0,40.1 c 0,1.4 1.1,2.5 2.5,2.5 l 21.2,0 c 1,0 1.9,-0.6 2.3,-1.5 l 0,0 C 30.4,31.6 39.9,25 51.1,25 66.3,25 78.7,37.4 78.7,52.6 78.7,67.8 66.3,80.2 51.1,80.2 40,80.2 30.4,73.6 26,64.1 l 0,0 c -0.4,-0.9 -1.3,-1.5 -2.3,-1.5 l -21.2,0 c -1.4,0 -2.5,1.1 -2.5,2.5 0,0.2 0,0.3 0.1,0.5 5.8,22.8 26.4,39.6 51,39.6 29.1,0 52.7,-23.6 52.7,-52.7 C 103.8,23.5 80.2,0 51.1,0 Z"',
+    // faClass: 'fas fa-undo',
   },
 ];
 // Edit your projects, its name, your skills used to make it, and the url.
