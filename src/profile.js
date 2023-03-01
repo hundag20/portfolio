@@ -87,20 +87,20 @@ const projects = [
     // Add image in './styles/images.css' in #project1
     id: 'project1',
     name: 'Tole Delivery',
-    skills: ['HTML, CSS, JS'],
+    skills: ['ReactJs, NodeJs'],
     url: 'https://toledelivery.com/',
   },
   {
     // Add image in './styles/images.css' in #project2
     id: 'project2',
     name: 'Hyab E-Commerce',
-    skills: ['HTML, CSS, JS'],
+    skills: ['ReactJs, NodeJs'],
     url: 'https://hyab-15046.web.app/',
   },
   {
     // Add image in './styles/images.css' in #project3
     id: 'project3',
-    name: 'Milestone Marketing Agency',
+    name: 'Company Website',
     skills: ['HTML, CSS, JS'],
     url: 'http://etmilestone.com/',
   },
@@ -108,7 +108,7 @@ const projects = [
     // Add image in './styles/images.css' in #project4
     id: 'project4',
     name: 'Telegram Ad Manager Bot',
-    skills: ['HTML, CSS, JS'],
+    skills: ['NodeJs, TelegrafJs'],
     url: 'https://github.com/kaustubhai',
   },
 
