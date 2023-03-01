@@ -85,45 +85,32 @@ const projects = [
   {
     // Add image in './styles/images.css' in #project1
     id: 'project1',
-    name: 'Project 1',
+    name: 'Tole Delivery',
     skills: ['HTML, CSS, JS'],
-    url: 'https://github.com/kaustubhai',
+    url: 'https://toledelivery.com/',
   },
   {
     // Add image in './styles/images.css' in #project2
     id: 'project2',
-    name: 'Project 2',
+    name: 'Hyab E-Commerce',
     skills: ['HTML, CSS, JS'],
-    url: 'https://github.com/kaustubhai',
+    url: 'https://hyab-15046.web.app/',
   },
   {
     // Add image in './styles/images.css' in #project3
     id: 'project3',
-    name: 'Project 3',
+    name: 'Milestone Marketing Agency',
     skills: ['HTML, CSS, JS'],
-    url: 'https://github.com/kaustubhai',
+    url: 'http://etmilestone.com/',
   },
   {
     // Add image in './styles/images.css' in #project4
     id: 'project4',
-    name: 'Project 4',
+    name: 'Telegram Ad Manager Bot',
     skills: ['HTML, CSS, JS'],
     url: 'https://github.com/kaustubhai',
   },
-  {
-    // Add image in './styles/images.css' in #project5
-    id: 'project5',
-    name: 'Project 5',
-    skills: ['HTML, CSS, JS'],
-    url: 'https://github.com/kaustubhai',
-  },
-  {
-    // Add image in './styles/images.css' in #project6
-    id: 'project6',
-    name: 'Project 6',
-    skills: ['HTML, CSS, JS'],
-    url: 'https://github.com/kaustubhai',
-  },
+
 ];
 // Edit your Miscellaneous Activities, its name and the url.
 // You can omit freely anything if you dont have it
@@ -133,21 +120,14 @@ const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc1
     id: 'misc1',
-    name: 'Miscellaneous 1',
-    url: 'https://github.com/kaustubhai',
+    name: 'Asset Master',
   },
   {
     // Add image in './styles/images.css' in #misc2
     id: 'misc2',
-    name: 'Miscellaneous 2',
-    url: 'https://github.com/kaustubhai',
+    name: 'Smart Attendance',
   },
-  {
-    // Add image in './styles/images.css' in #misc3
-    id: 'misc3',
-    name: 'Miscellaneous 3',
-    url: 'https://github.com/kaustubhai',
-  },
+
 ];
 // Contact form text, and Formspree link(to send a submit contact through their API as in contact.js)
 // To get your own jotform link, go to https://formspree.io/

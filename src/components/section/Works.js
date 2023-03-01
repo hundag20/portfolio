@@ -11,7 +11,7 @@ const Works = () => {
                         <h1 id="Projects" className="red-line pp-head">{section3Title}</h1>
                     </div>
                 </>
-                <div className="row">
+                <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
                 {projects && projects.map((x) => 
                 <Project key={x.id} id={x.id} url={x.url} name={x.name} skills={x.skills}/>
                 )}
@@ -24,7 +24,7 @@ const Works = () => {
                         <h1 id="Projects" className="red-line pp-head" >{section4Title}</h1>
                     </div>
                 </>
-                <div className="row">
+                <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
                     {miscellaneous && miscellaneous.map((x) => 
                     <Project key={x.id} id={x.id} url={x.url} name={x.name} />
                     )}
