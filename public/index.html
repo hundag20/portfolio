@@ -33,8 +33,8 @@
     if(localStorage.getItem('mode') === 'Dark'){
       document.getElementById('mode-switch').checked = true;
       document.documentElement.classList.toggle('dark-mode')
-      document.getElementById('not-dark').classList.toggle('inverse-dark')
-      document.getElementById('not-dark2').classList.toggle('inverse-dark')
+      const els =  (document.querySelectorAll("*[id^=not-dark]"))
+     els.forEach(el => el.classList.toggle('inverse-dark'));
       var x = document.getElementsByClassName('img-pro')
       for(let i = 0; i < x.length; i += 1) {
         x.item(i).classList.toggle("inverse-dark");

@@ -85,7 +85,7 @@ const section3Title = 'Projects Available in the Public Domain';
 const projects = [
   {
     // Add image in './styles/images.css' in #project1
-    id: 'project1',
+    id: 'tole',
     name: 'Tole Delivery',
     skills: ['ReactJs, NodeJs'],
     url: 'https://toledelivery.com/',
@@ -119,7 +119,7 @@ const section4Title = 'Projects Deployed in Private Environments';
 const miscellaneous = [
   {
     // Add image in './styles/images.css' in #misc1
-    id: 'misc1',
+    id: 'assetmaster',
     name: 'Asset Master',
   },
   {

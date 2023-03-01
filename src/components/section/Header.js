@@ -23,8 +23,9 @@ const Header = () => {
 
   const toggleDarkMode = (e) => {
     document.documentElement.classList.toggle('dark-mode');
-    document.getElementById('not-dark').classList.toggle('inverse-dark');
-    document.getElementById('not-dark2').classList.toggle('inverse-dark');
+    (document.querySelectorAll("*[id^=not-dark]")).forEach(el => el.classList.toggle('inverse-dark'));
+
+
     var x = document.getElementsByClassName('img-pro');
     for (let i = 0; i < x.length; i += 1) {
       x.item(i).classList.toggle('inverse-dark');
@@ -44,7 +45,11 @@ const Header = () => {
         </p>
 
         <HeaderButton />
-        <SpeedDial ariaLabel="SpeedDial basic example"
+        <label className="switch">
+          <input id="mode-switch" onClick={e => toggleDarkMode(e)} type="checkbox" />
+          <span className="slider round"></span>
+        </label>
+        <SpeedDial id='not-dark-8' ariaLabel="SpeedDial basic example"
           sx={{ position: 'fixed', bottom: 16, right: 16 }}
           icon={<Tooltip title="Download CV">
             <IconButton onClick={downloadCvHandler}>

@@ -11,22 +11,22 @@ const Works = () => {
                         <h1 id="Projects" className="red-line pp-head">{section3Title}</h1>
                     </div>
                 </>
-                <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
-                {projects && projects.map((x) => 
-                <Project key={x.id} id={x.id} url={x.url} name={x.name} skills={x.skills}/>
-                )}
+                <div className="row" style={{ display: 'flex', justifyContent: 'center' }}>
+                    {projects && projects.map((x) =>
+                        <Project key={x.id} id={x.id} url={x.url} name={x.name} skills={x.skills} />
+                    )}
                 </div>
             </div>
 
             <div className="third">
                 <>
-                    <div className="pp-head-line mx-auto text-center" style={{width: '40%'}}>
+                    <div className="pp-head-line mx-auto text-center" style={{ width: '40%' }}>
                         <h1 id="Projects" className="red-line pp-head" >{section4Title}</h1>
                     </div>
                 </>
-                <div className="row" style={{display: 'flex', justifyContent: 'center'}}>
-                    {miscellaneous && miscellaneous.map((x) => 
-                    <Project key={x.id} id={x.id} url={x.url} name={x.name} />
+                <div className="row" style={{ display: 'flex', justifyContent: 'center' }}>
+                    {miscellaneous && miscellaneous.map((x) =>
+                        <Project key={x.id} id={x.id} url={x.url} name={x.name} />
                     )}
                 </div>
             </div>

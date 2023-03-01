@@ -4,7 +4,7 @@
 }
 
 /* Projects Photo */
-.project1 {
+.tole {
     background-image: url(/src/img/tole.png);
     cursor: none;
 }
@@ -35,7 +35,7 @@
 }
 
 /* Miscelaneous Activities photo */
-.misc1 {
+.assetmaster {
     background-image: url(/src/img/assetMaster.svg);
     cursor: none;
 }

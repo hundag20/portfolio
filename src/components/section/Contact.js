@@ -23,10 +23,11 @@ const Contact = () => {
     setFlexDir(dir);
   };
   return (
-    <div className='parallax' onLoad={onLoadFunc}>
-      <div data-aos='zoom-in-up'>
+    <div id='not-dark-3' className='parallax' onLoad={onLoadFunc}>
+      <div data-aos='zoom-in-up' id='not-dark-4'>
         <>
           <div
+            id='not-dark-9'
             className='git-head-div text-center mx-auto'
             style={{ width: '100%' }}
           >
