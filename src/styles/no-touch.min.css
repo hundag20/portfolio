@@ -529,7 +529,7 @@ input:checked+.slider:before {
 
 /* https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 */
 .parallax {
-  background-image: url(/src/img/banner4.jpg);
+  background-image: url(/src/img/pic02.jpg);
 }
 
 @keyframes typewriter {
