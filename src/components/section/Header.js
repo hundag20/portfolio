@@ -1,7 +1,7 @@
 import React from 'react';
 import HeaderButton from '../layouts/HeaderButton';
 import { header } from '../../profile';
-import { IconButton, SpeedDial, SpeedDialIcon, Tooltip } from '@mui/material';
+import { Icon, IconButton, SpeedDial, SpeedDialIcon, Tooltip } from '@mui/material';
 import DownloadIcon from '@mui/icons-material/Download';
 
 const downloadCvHandler = () => {
@@ -50,14 +50,14 @@ const Header = () => {
           <span className="slider round"></span>
         </label>
         <SpeedDial id='not-dark-8' ariaLabel="SpeedDial basic example"
-          sx={{ position: 'fixed', bottom: 16, right: 16 }}
+          sx={{ position: 'fixed', bottom: 16, right: 16, marginRight: 2 }}
           icon={<Tooltip title="Download CV">
-            <IconButton onClick={downloadCvHandler}>
-              <DownloadIcon fontSize='large' />
+            <IconButton onClick={downloadCvHandler} sx={{ fontFamily: "'Libre Baskerville', serif" }} size='large'>
+              <strong>cv</strong>
             </IconButton>
           </Tooltip>} />
       </div>
-    </div>
+    </div >
   );
 };
 
